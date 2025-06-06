@@ -1,6 +1,6 @@
 import axios from "axios"; // Import axios
 
-const baseUrl = "http://192.168.38.163:5000";
+const baseUrl = "http://localhost:5000";
 const getData = async () => {
   try {
     const response = (await axios.get(`${baseUrl}/get-data`)) || {
