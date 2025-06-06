@@ -1,6 +1,6 @@
 import axios from "axios"; // Import axios
 
-const baseUrl = process.env.REACT_APP_BASE_URL;
+const baseUrl = "http://192.168.38.163:5000";
 const getData = async () => {
   try {
     const response = (await axios.get(`${baseUrl}/get-data`)) || {
